@@ -11,10 +11,10 @@ class User
     //---------------------------------------------------------------//
     function __construct($userid, $nickname, $password, $privilege)
     {
-        $this->userid;
-        $this->nickname;
-        $this->password;
-        $this->privilege;
+        $this->userid = $userid;
+        $this->nickname = $nickname;
+        $this->password = $password;
+        $this->privilege = $password;
     }
 
     //---------------------------------------------------------------//
@@ -43,7 +43,7 @@ class User
     {
         $this->userid = bin2hex($userid);
         $this->nickname = bin2hex($nickname);
-        $this->password = md5($password),
+        $this->password = md5($password);
         $this->privilege = bin2hex($privilege);
         
         $user=array( 
@@ -66,8 +66,6 @@ class User
         }  
         return FALSE;
     }
-
-
 }
 
 ?>

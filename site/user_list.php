@@ -3,15 +3,12 @@
 include('user.php');
 class User_list
 {
-    private $datafile;
-    private $separator;
+    private $datafile = "txtFiles/users.txt";
+    private $separator  = ":-:";
     private $users = array();
 
-    function __construct($datafile = "txtFiles/users.txt", $separator = ":-:")
+    function __construct()
     {
-        $this->datafile = $datafile;
-        $this->separator = $separator;
-
         $this->get_file();
     }
     //---------------------------------------------------------------// 

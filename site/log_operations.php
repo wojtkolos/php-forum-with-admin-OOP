@@ -7,8 +7,7 @@ class get_login_page {
     //---------------------------------------------------------------//
     //                      class constructor
     //---------------------------------------------------------------//
-    function __construct($datafile, $separator=":-:";
-)
+    function __construct($datafile, $separator=":-:")
     {
         $this->datafile = $datafile;
         $this->separator = $separator;
